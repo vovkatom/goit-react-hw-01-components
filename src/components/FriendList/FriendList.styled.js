@@ -4,8 +4,10 @@ export const FriendWrap = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 690px;
+  width: 600px;
+  padding: 20px;
   gap: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
 `;
 
 export const FriendItem = styled.li`

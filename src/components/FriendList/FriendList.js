@@ -11,10 +11,10 @@ export const FriendList = ({ friends }) => {
   return (
     <FriendWrap>
       {friends.map(({ avatar, name, isOnline, id }) => (
-        <FriendItem key={id}>
-          <UserStatus isOnline={isOnline}></UserStatus>
-          <FriendIcon src={avatar} alt={name}></FriendIcon>
-          <FriendName>{name}</FriendName>
+        <FriendItem className="item" key={id}>
+          <UserStatus className="status" isOnline={isOnline}></UserStatus>
+          <FriendIcon className="avatar" src={avatar} alt={name}></FriendIcon>
+          <FriendName className="name">{name}</FriendName>
         </FriendItem>
       ))}
     </FriendWrap>
