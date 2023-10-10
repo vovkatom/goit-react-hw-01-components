@@ -24,7 +24,6 @@ export const StatisticList = styled.ul`
 `;
 
 export const StatisticItem = styled.li`
-  // flex-basis: 100%;
   display: flex;
   flex-direction: column;
   padding: 12px;
