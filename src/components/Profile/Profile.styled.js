@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Section = styled.div`
   background-color: #e7ecf2;
+  width: 400px;
 `;
 
 export const UserWrapper = styled.div`
@@ -30,7 +31,7 @@ export const StatisticItem = styled.li`
   background-color: #f3f6f9;
   gap: 12px;
   border: 1px solid rgba(0, 0, 0, 0.4);
-  width: 200px;
+  width: 400px;
 `;
 
 export const StatNumber = styled.span`

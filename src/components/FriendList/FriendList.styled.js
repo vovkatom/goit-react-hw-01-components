@@ -4,8 +4,7 @@ export const FriendWrap = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 600px;
-  padding: 20px;
+  width: 400px;
   gap: 12px;
   border: 1px solid rgba(0, 0, 0, 0.4);
 `;

@@ -8,7 +8,7 @@ const generateRandomColor = () => {
 };
 
 export const StatSection = styled.section`
-  width: 600px;
+  width: 400px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   color: white;
 `;
