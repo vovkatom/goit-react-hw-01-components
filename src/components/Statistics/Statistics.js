@@ -27,17 +27,17 @@ export const Statistics = ({ data, title }) => {
       percentages.reduce((sum, percentage) => sum + percentage, 0);
 
     return (
-      <StatItem key={label}>
-        <span>{label}</span>
-        <StatNumber>{averagePercentage.toFixed(0)}%</StatNumber>
+      <StatItem className="item" key={label}>
+        <span className="label">{label}</span>
+        <StatNumber className="percentage">{averagePercentage.toFixed(0)}%</StatNumber>
       </StatItem>
     );
   });
 
   return (
-    <StatSection>
-      {title && <StatTitle>{title}</StatTitle>}
-      <StatList>{statItems}</StatList>
+    <StatSection className="statistics">
+      {title && <StatTitle className="title">{title}</StatTitle>}
+      <StatList className="stat-list">{statItems}</StatList>
     </StatSection>
   );
 };
