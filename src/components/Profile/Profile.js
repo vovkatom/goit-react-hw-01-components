@@ -32,6 +32,8 @@ export const Profile = ({ user }) => {
           <StatNumber className="quantity">{user.stats.likes}</StatNumber>
         </StatisticItem>
       </StatisticList>
+      console.log('object :>> ', object); // clo
+      console.log(object); //clg
     </Section>
   );
 };
