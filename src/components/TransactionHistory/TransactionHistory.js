@@ -9,7 +9,7 @@ import {
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <TransactionTable>
+    <TransactionTable className="transaction-history">
       <TableHead>
         <tr>
           <TableHeaderCell>Type</TableHeaderCell>
