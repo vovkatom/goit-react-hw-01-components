@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  class:"sss"
+  // class:"sss"
   display: flex;
   flex-direction: column;
   justify-content: center;

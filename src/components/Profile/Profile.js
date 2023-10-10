@@ -11,25 +11,25 @@ import {
 
 export const Profile = ({ user }) => {
   return (
-    <Section>
-      <UserWrapper>
-        <UserAvatar src={user.avatar} alt={user.username}></UserAvatar>
-        <Username>{user.username}</Username>
-        <p>@{user.tag}</p>
-        <p>{user.location}</p>
+    <Section className="profile">
+      <UserWrapper className="description">
+        <UserAvatar className="avatar" src={user.avatar} alt={user.username}></UserAvatar>
+        <Username className="name">{user.username}</Username>
+        <p className="tag">@{user.tag}</p>
+        <p className="location">{user.location}</p>
       </UserWrapper>
-      <StatisticList>
+      <StatisticList className="stats">
         <StatisticItem>
-          <span>Followers</span>
-          <StatNumber>{user.stats.followers}</StatNumber>
+          <span className="label">Followers</span>
+          <StatNumber className="quantity">{user.stats.followers}</StatNumber>
         </StatisticItem>
         <StatisticItem>
-          <span>Views</span>
-          <StatNumber>{user.stats.views}</StatNumber>
+          <span className="label">Views</span>
+          <StatNumber className="quantity">{user.stats.views}</StatNumber>
         </StatisticItem>
         <StatisticItem>
-          <span>Likes</span>
-          <StatNumber>{user.stats.likes}</StatNumber>
+          <span className="label">Likes</span>
+          <StatNumber className="quantity">{user.stats.likes}</StatNumber>
         </StatisticItem>
       </StatisticList>
     </Section>

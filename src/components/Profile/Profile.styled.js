@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Section = styled.div`
-   background-color: #e7ecf2;
+  background-color: #e7ecf2;
   // border-radius: 24px;
   // padding: 80px;
   // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -24,7 +24,7 @@ export const UserAvatar = styled.img`
   height: 120px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.4);
-  // padding: 8px;
+  padding: 8px;
 `;
 
 export const Username = styled.p`
@@ -34,9 +34,6 @@ export const Username = styled.p`
 
 export const StatisticList = styled.ul`
   display: flex;
-  // border-bottom-left-radius: 24px;
-  // border-bottom-right-radius: 24px;
-  // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 `;
 
 export const StatisticItem = styled.li`
