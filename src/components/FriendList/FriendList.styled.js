@@ -16,7 +16,6 @@ export const FriendItem = styled.li`
   width: 250px;
   padding: 24px;
   gap: 16px;
-  border-radius: 8px;
 `;
 
 export const FriendIcon = styled.img`
