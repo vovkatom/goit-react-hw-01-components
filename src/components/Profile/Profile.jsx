@@ -10,6 +10,7 @@ import {
 } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
+  const { followers, views, likes } = stats;
   return (
     <Section className="profile">
       <UserWrapper className="description">
@@ -21,15 +22,15 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       <StatisticList className="stats">
         <StatisticItem>
           <span className="label">Followers</span>
-          <StatNumber className="quantity">{stats.followers}</StatNumber>
+          <StatNumber className="quantity">{followers}</StatNumber>
         </StatisticItem>
         <StatisticItem>
           <span className="label">Views</span>
-          <StatNumber className="quantity">{stats.views}</StatNumber>
+          <StatNumber className="quantity">{views}</StatNumber>
         </StatisticItem>
         <StatisticItem>
           <span className="label">Likes</span>
-          <StatNumber className="quantity">{stats.likes}</StatNumber>
+          <StatNumber className="quantity">{likes}</StatNumber>
         </StatisticItem>
       </StatisticList>
     </Section>
