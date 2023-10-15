@@ -22,10 +22,6 @@ export const FriendName = styled.p`
   font-weight: bold;
 `;
 
-const getStatusBcgColor = ({ isOnline }) => {
-  return isOnline ? 'green' : 'red';
-};
-
 export const Status = styled.span`
-  color: ${getStatusBcgColor};
+  color: ${({ isOnline }) => (isOnline ? 'green' : 'red')};
 `;
