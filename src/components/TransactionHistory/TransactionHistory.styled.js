@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TransactionTable = styled.table`
-  width: 600px;
+  width: 400px;
   border: 1px solid black;
 `;
 
