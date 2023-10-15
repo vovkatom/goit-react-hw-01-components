@@ -9,13 +9,13 @@ import {
 
 export const Statistics = ({ data, title }) => {
   return (
-    <StatSection>
-      {title && <StatTitle>{title}</StatTitle>}
-      <StatList>
+    <StatSection className="statistics">
+      {title && <StatTitle  className="title">{title}</StatTitle>}
+      <StatList  className="stat-list">
         {data.map(({ id, label, percentage }) => (
-          <StatItem key={id}>
-            <span>{label}</span>
-            <StatNumber>{percentage}%</StatNumber>
+          <StatItem className="item" key={id}>
+            <span className="label">{label}</span>
+            <StatNumber className="percentage">{percentage}%</StatNumber>
           </StatItem>
         ))}
       </StatList>
